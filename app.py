@@ -28,8 +28,8 @@ elif modulo == "Módulo Array":
 
   st.write(datos_produccion)
 
-st.write("La producción tota es: ", np.sum(datos_produccion))
-st.write("La producción promedio es: ", np.mean(datos_produccion))
+  st.write("La producción tota es: ", np.sum(datos_produccion))
+  st.write("La producción promedio es: ", np.mean(datos_produccion))
 
 else:
   st.write("Estás en el módulo de funciones")
