@@ -6,10 +6,17 @@ st.image("Python_logo.png")
 st.sidebar.image("DMC.png")
 
 modulo = st.sidebar_selectbox("Elija un modulo", ["Módulo listas","Módulo Array","Módulo funciones"])
+if modulo == "Módulo listas":
+  
+  valor_inicial = st.number_input("Ingrese el valor inicial", value=0)
+  valor_final = st.number_input("Ingrese el valor final", value = 1)
+  
+  lista_numerica = list(range(valor_inicial,valor_final))
+  
+  st.write(lista_numerica)
 
-valor_inicial = st.number_input("Ingrese el valor inicial", value=0)
-valor_final = st.number_input("Ingrese el valor final", value = 1)
+elif modulo == "Módulo Array":
+  st.write("Estás en el módulo de arreglos")
 
-lista_numerica = list(range(valor_inicial,valor_final))
-
-st.write(lista_numerica)
+else:
+  st.write("Estás en el módulo de funciones")
