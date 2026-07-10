@@ -5,7 +5,7 @@ st.sidebar.title("Parámetros")
 st.image("Python_logo.png")
 st.sidebar.image("DMC.png")
 
-modulo = st.sidebar_selectbox("Elija un modulo", ["Módulo listas","Módulo Array","Módulo funciones"])
+modulo = st.sidebar.selectbox("Elija un modulo", ["Módulo listas","Módulo Array","Módulo funciones"])
 if modulo == "Módulo listas":
   
   valor_inicial = st.number_input("Ingrese el valor inicial", value=0)
@@ -18,5 +18,8 @@ if modulo == "Módulo listas":
 elif modulo == "Módulo Array":
   st.write("Estás en el módulo de arreglos")
 
+  limite_inferior = st.number_input("Ingrese el limite inferior", value=1200)
+  limite_superior = st.number_input("Ingrese el limite superior", value = 1250)
+  
 else:
   st.write("Estás en el módulo de funciones")
